@@ -189,6 +189,7 @@ body {
 
 .h1 { font-size: var(--fs-2); }
 
+
 .h2 { font-size: var(--fs-3); }
 
 .h3 { font-size: var(--fs-5); }
@@ -388,10 +389,16 @@ body {
 }
 .cover-title {
   font-family: "Mitr", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
-
 }
+
+.cover-subtitle {
+  font-family: "Mitr", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
 .cover .container {
   display: grid;
   gap: 60px;
@@ -402,8 +409,9 @@ body {
 .cover-banner {
   padding-inline-start: 30px;
   padding-block-end: 30px;
-  max-width: 420px;
+  
   margin-inline: auto;
+  
 }
 
 .cover-banner .w-100 { border-radius: 10px 30px; }
@@ -494,30 +502,18 @@ body {
 
 
 
-/*-----------------------------------*\
-  #CHAPTERS
-\*-----------------------------------*/
-
-.chapter-card {
-  height: 100%;
-  background-color: var(--white);
-  padding: 25px;
-  border-radius: var(--radius-5);
-  box-shadow: var(--shadow-2);
-  transition: var(--transition-2);
-}
-
-.chapter-card:is(:hover, :focus-within) { transform: translateY(-10px); }
-
-.chapter-card .card-title { margin-block-end: 15px; }
-
-
-
 
 
 /*-----------------------------------*\
   #PREVIEW
 \*-----------------------------------*/
+
+.title {
+  font-family: "Mitr", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
 
 .tab-list {
   display: flex;
@@ -585,10 +581,6 @@ body {
   padding: 30px;
 }
 
-.author-name {
-  font-size: var(--fs-7);
-  margin-block-end: 30px;
-}
 
 .author .section-text { font-size: unset; }
 
@@ -793,7 +785,7 @@ textarea.input-field {
 
 
 
-  /* Cover*/
+  /* Book */
 
   .cover {
     padding-block-start: calc(var(--section-padding) + 100px);
