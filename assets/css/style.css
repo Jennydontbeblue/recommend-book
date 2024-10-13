@@ -144,7 +144,7 @@ body {
 :focus-visible { outline-offset: 4px; }
 
 ::selection {
-  background-color: var(--old-rose);
+  background-color: #B5D0E0;
   color: var(--white);
 }
 
